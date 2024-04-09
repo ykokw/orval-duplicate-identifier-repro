@@ -1,0 +1,16 @@
+{
+  "name": "orval-duplicate-identifier-repro",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:api": "orval"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "orval": "^6.26.0",
+    "typescript": "^5.4.4"
+  }
+}

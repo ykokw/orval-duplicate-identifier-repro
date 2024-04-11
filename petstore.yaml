@@ -12,7 +12,7 @@ paths:
       summary: List all pets
       operationId: listPets
       tags:
-        - pets
+        - getPets
       parameters:
         - name: limit
           in: query
@@ -42,7 +42,7 @@ paths:
       summary: Create a pet
       operationId: createPets
       tags:
-        - pets
+        - postPet
       requestBody:
         required: true
         content:
@@ -97,7 +97,7 @@ paths:
       summary: Info for a specific pet
       operationId: showPetById
       tags:
-        - pets
+        - getPet
       parameters:
         - name: petId
           in: path

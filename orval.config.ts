@@ -7,7 +7,7 @@ export default defineConfig({
       target: "./src/petstore.ts",
       mock: true,
       clean: true,
-      mode: "split",
+      mode: "tags-split",
     },
   },
 });

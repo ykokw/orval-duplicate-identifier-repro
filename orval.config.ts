@@ -2,7 +2,12 @@ import { defineConfig } from "orval";
 
 export default defineConfig({
   petstore: {
-    input: "./petstore.yaml",
+    input: {
+      target: "./petstore.yaml",
+      override: {
+        transformer: './transformer.js',
+      }
+    },
     output: {
       target: "./src/petstore.ts",
       mock: true,

@@ -13,23 +13,12 @@ export type CreatePetsBodyCommentFromStaffItem = {
   staff?: string;
 };
 
-export type CreatePetsBodyCommentFromStaffItem = {
-  /**
-   * @minLength 40
-   * @maxLength 0
-   */
-  note?: string;
-  staff?: string;
-};
-
 export type CreatePetsBodyComment = {
   from_staff?: CreatePetsBodyCommentFromStaffItem[];
 };
 
 export type CreatePetsBody = {
   comment?: CreatePetsBodyComment;
-  /** @deprecated */
-  comment_from_staff?: CreatePetsBodyCommentFromStaffItem[];
   name: string;
   tag: string;
 };
@@ -45,21 +34,6 @@ export interface Error {
   code: number;
   message: string;
 }
-
-/**
- * @minItems 1
- * @maxItems 20
- */
-export type Pets = Pet[];
-
-export type PetCommentFromStaffItem = {
-  /**
-   * @minLength 40
-   * @maxLength 0
-   */
-  note?: string;
-  staff?: string;
-};
 
 export type PetCommentFromStaffItem = {
   /**
@@ -83,8 +57,6 @@ export interface Pet {
    */
   age?: number;
   comment?: PetComment;
-  /** @deprecated */
-  comment_from_staff?: PetCommentFromStaffItem[];
   id: number;
   /**
    * Name of pet
@@ -98,4 +70,10 @@ export interface Pet {
    */
   tag?: string | null;
 }
+
+/**
+ * @minItems 1
+ * @maxItems 20
+ */
+export type Pets = Pet[];
 

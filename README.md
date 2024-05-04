@@ -1,0 +1,2 @@
+- Reproduction for following discussion
+- https://github.com/anymaniax/orval/discussions/1301
